@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sridharan portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(2, 2, 58);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(4, 4, 78);
+      }
+      nav ul{
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li{
+        list-style: none;
+        margin:23px;
+      }
+      .left{
+        font-size: 1.5rem;
+      }
+      .firstsection{
+        display: flex;
+        justify-content: space-around;
+        margin: 25px;
+        align-items: center;
+      }
+      .leftsection{
+        
+        width: 34px;
+        font-size: 2rem;
+        margin-bottom: 200px;
+      }
+      .firstsection > div{
+        width: 30%;
+      }
+      .rightsection{
+        
+        width: 34px;
+        margin: 60px;
+        align-items: center;
+
+      }
+      .image{
+    width: 130%;
+    height: 80%;
+    
+}
+.leftsection div{
+  font-size: 1.5rem;
+}
+.purple{
+  color: rgb(153, 90, 211);
+}
+.gray{
+  color: gray;
+}
+nav ul li a{
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover{
+        
+        color:rgb(25, 224, 231);
+        font-size: 1.04rem;
+      }
+      #element{
+        color: rgb(153, 90, 211);
+  }
+  main hr {
+    height: 1.4px;
+    border: 0;
+    margin: 40px 84px;
+    background-color: #9183bd;
+    backgroundcolor: red;
+}
+  .secondsection{
+    max-width: 80vw;
+    margin: auto;
+    height: 50vh;
+
+  }
+  .secondsection h1{
+    font-size: 1.9rem;
+  }
+  .box{
+    background-color: white;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0 ;
+    display: flex;
+}
+ .secondsection .vertical{
+  height: 93px;
+  width: 1px;
+  background-color: white;
+  margin: 0 100px ;
+
+
+}
+.imgtop{
+  width: 50px;
+  position: relative;
+  top: 32px;
+  left: -80px;
+}
+.description{
+    width: 400px;
+    margin-left: 40px;
+    margin-top: 1.5vh;
+}
+.vertical-title{
+  width: 50vh;
+  margin-left: 20px;
+}
+.secondcolumn{
+  width: 50vh;
+  margin-left: 40px;
+  margin-top: 5vh;
+}
+.thirdcolumn{
+  margin-left: 60px;
+}
+.certificate{
+  margin-top: 150px;
+  margin-left: 65vh;
+  
+}
+.certificate a{
+  text-decoration: none;
+  color: white;
+}
+.certificate a:hover{
+  text-decoration: none;
+  color: rgb(182, 10, 10);
+  font-size: 1.02rem;
+}
+footer{
+  background-color: rgb(31, 26, 31);
+  height: 150px;
+}
+.footer{
+  display: flex;
+  margin: 23px 122px;
+  padding: 0;
+  justify-content: space-evenly;
+
+}
+.footer ul{
+  list-style: none;
+}
+.text-centre{
+  color: gray;
+  text-align: center;
+}
+.buttons{
+  margin-top: 20px;
+}
+.btn-first{
+    background-color: #0d0db0;
+    color: white;
+    padding: 12px;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn{
+  margin-left: 2vh;
+  padding: 12px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+
+
+}
+/* .btn-first a:hover{
+  font-size: 1.02rem;
+  color: red;
+}
+.btn a:hover{
+  font-size: 1.02rem;
+  color: red;
+} */
+.btn-first a{
+  text-decoration: none;
+  color: white;
+}
+.contact-form-container {
+  margin-top: 12vh;
+
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+.contact{
+  color: black;
+ 
+}
+html {
+    scroll-behavior: smooth;
+}
+.fourth{
+    max-width: 90vw;
+    margin-left: 5vh;
+    height: 80vh;
+
+  }
+  .about-section{
+    font-size: 1.5rem ;
+    font-family: "Poppins", sans-serif;
+  }
+  .photo{
+    border-radius: 100%;
+    margin-left: 45%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    
+  }
+ 
+  .awards-section{
+    padding: 60px 20px;
+    background-color: #0d00ff;
+    text-align: center;
+    border-radius: 8px;
+    
+    margin: 20px auto;
+    max-width: 900px;
+    font-size: 1.5rem;
+  
+}
+
+.awards-section h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    text-decoration: underline;
+}
+
+.awards-section ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.awards-section li {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 25px;
+    text-align: left;
+    font-size: 2rem;
+}
+
+.awards-section li:before {
+    content: "🏆";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    color: #007BFF;
+}
+
+.awards-section li strong {
+    color: #000;
+    font-weight: bold;
+    
+}
+@media only screen and (max-width: 600px){
+       nav{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        width: 94vh;
+        height: 80px;
+        background-color: rgb(4, 4, 78);
+      }
+      .firstsection{
+        width: 92vh;
+        display: flex;
+        justify-content: space-around;
+        margin: 10px;
+        align-items: center;
+      }
+    main hr {
+    height: 1.8px;
+    border: 0;
+    margin: 40px 40px;
+    margin-left: 20vh;
+    background-color: #9183bd;
+    backgroundcolor: red;
+    }
+    #about{
+    width: 82vh;
+    margin-top: 40vh;
+    }
+    #awards{
+      margin-top: 17vh;
+      margin-left: 10vh;
+      width: 60vh;
+    }
+    .contact-form-container{
+      width: 88vh;
+    }
+    footer{
+      width: 94vh;
+  background-color: rgb(31, 26, 31);
+  height: 150px;
+  }
+  .footer{
+  display: flex;
+
+  margin: 23px 122px;
+  padding: 0;
+  justify-content: space-evenly;
+
+  }
+  .box {
+            display: flex;
+            flex-wrap: wrap;
+            width: 92vh;
+            
+        }
+
+      .vertical {
+        width: 92vh;
+        margin-left: 20vh;
+            flex-basis: 40%; /* Default flex-basis for larger screens */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color:#02023a /* Semi-transparent background */
+            border: 1px solid black; /* Added for visual distinction */
+            padding: 25px; /* Optional: for better spacing */
+            
+            
+              
+        }
+
+        .imgtop {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .vertical-title, .secondcolumn, .thirdcolumn, .description {
+         
+          color: black;
+          background-color:#02023a 
+            margin-top: 0px;
+           margin: 0%;
+           
+          
+        }
+        .description{
+          font-size: 0.85rem;
+
+        }
+
+       
+        }
+
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Sridharan's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#awards">Awards and honours</a></li>
+            <li><a href="#contactme">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="firstsection">
+        <div class="leftsection">
+          Hi I am <span class="purple">Sridharan</span> 
+          <div>Electrical and Electronics Engineer</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn-first" id="resume"><a href="Resume.pdf" download="resume.pdf">Download Resume</a></button>
+            <button class="btn" onclick="window.location.href='https://www.linkedin.com/in/sridharan-t-6307472a1/'">Visit LinkedIn</button>
+          </div>
+        </div>
+        <div class="rightsection"><img src="Designer.jpeg"class="image"></div>
+      </section>
+      <hr>
+      <section class="secondsection">
+        <span class="Gray">What I have done so far</span>
+        <h1>My Industrial  Experience</h1>
+        <div class="box">
+        <div class="vertical">
+          <img src="images.png" class="imgtop" alt="">
+          <div class="vertical-title">Inplant Traing</div>
+        </div>
+        <div class="vertical"><div class="secondcolumn">june 22 - june 29</div></div>
+        <div class="vertical"><div class="thirdcolumn">Training at 110/11kv substation</div></div>
+        <div class="vertical">
+          <div class="description">Got trained in the power distribution techologies at the 110/11kv substation.I also learned the uses of Realy technology,importance of Plc program and Emerging trends at substation</div>
+        </div>
+        </div>
+        <div class="certificate"><a href="certificate.jpeg" download="Inplantcertificated.jpeg">certificate</a></div>
+        
+        
+      </section>
+      <section class="fourth">
+        <div class="about-section" id="about">
+          <h2>About Me</h2>
+          <img src="photo.jpg" alt="" width="200px" height="200px" class="photo">
+          <p>Welcome to my website! My name is T Sridharan, and I am a passionate  electrical and electronics student with a passion for technology and innovation.</p>
+          <p>I have worked on numerous projects in my field, including automation and integrating AI with electrical systems. My goal is to leverage technology to solve real-world problems and improve the quality of life for people around the globe.</p>
+          <p>In my free time, I enjoy exploring new technologies, working on personal projects, and continuously learning to expand my skill set. I am always eager to connect with like-minded individuals and explore new opportunities.</p>
+          <p class="lastline">If you would like to learn more about my work or discuss potential collaborations, please feel free to contact me.</p>
+      </div>
+      </section>
+      <section class="fifth">
+        <div class="awards-section" id="awards">
+          <h1>Awards and Honors</h1>
+          <ul>
+              <li>
+                  <strong>44th Rank</strong> in Space Mission Quiz conducted by Sri Shakthi Institute of Technology, Coimbatore
+              </li>
+              <li>
+                  <strong>Finalist</strong> in Generative AI Hackathon organized by Srikrishna College of Technology, Coimbatore
+              </li>
+              <li>
+                  <strong>Winner</strong> of Paper Presentation in Ripples, conducted by Society of Electrical and Electronics Engineering
+              </li>
+          </ul>
+      </div>
+
+      </section>
+      <section class="thirdsection">
+        <div class="contact-form-container">
+          
+          <form class="contact-form" action="http://localhost:3000/submit-form" method="post">
+            <h2 class="contact" id="contactme">Contact Me</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+        
+            <button type="submit">Send</button>
+        </form>
+        
+      </div>
+      </section>
+ 
+      
+    </main>
+    <footer>
+      <div class="footer">
+        <h3>Sridharan's Portfolio</h3>
+      
+      <div class="footer-second">
+        <ul>
+          <li>Home</li>
+          <li>about</li>
+          <li>contact</li>
+          <li>Projects</li>
+        </ul>
+
+      </div>
+      <div class="footer-third">
+
+      </div>
+      <div class="footer-fourth">
+        <ul>
+          <li>Home</li>
+          <li>about</li>
+          <li>contact</li>
+          <li>Projects</li>
+        </ul>
+
+
+      </div>
+    </div>
+    <div class="text-centre">Copyright&#169 Sridharan's portfolio|All rights reserved</div>
+      
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Electrical circuit design', 'Eectronics design','Plc &amp; Relay technology','Matlab software','Ansoft software','AI ML','Automation',''],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
